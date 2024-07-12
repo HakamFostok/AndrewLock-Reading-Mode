@@ -1,0 +1,16 @@
+{
+    "name": "Andrew Lock Reading Mode",
+    "description": "Remove a lot of clutter from Andrew Lock Blogs to let you focus on Reading only.",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+      "default_popup": "hello.html"
+    },
+    "content_scripts": [
+      {
+        "matches": [ "https://andrewlock.net/*" ],
+        "excludeMatches": [ "https://andrewlock.net" ],
+        "js": [ "/andrewlockReadingMode.js" ]
+      }
+    ]
+  }
