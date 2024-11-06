@@ -7,6 +7,7 @@ removeElement('footer.mb-1');
 removeElement('nav.mt-4');
 removeElement('div.gsc-comments');
 removeElement('aside.giscus');
+removeElement('aside.relative.shadow-lg');
 
 const element = document.querySelector('main');
 element.className = "relative block xl:flex justify-between";
