@@ -8,6 +8,20 @@ removeElement('nav.mt-4');
 removeElement('div.gsc-comments');
 removeElement('aside.giscus');
 removeElement('aside.relative.shadow-lg');
+removeElement('div.flex.items-center.p-2.subb-body');
+removeElement("#subbscribe");
+
+let headers = document.querySelectorAll('h2');
+headers.forEach(header => {
+    header.style.marginTop = '0';
+    header.style.marginBottom = '0';
+});
+
+headers = document.querySelectorAll('h3');
+headers.forEach(header => {
+    header.style.marginTop = '0';
+    header.style.marginBottom = '0';
+});
 
 const element = document.querySelector('main');
 element.className = "relative block xl:flex justify-between";
